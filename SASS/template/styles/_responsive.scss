@@ -1,0 +1,386 @@
+@media screen and (max-width: 1868px) {
+	.slider-box.testimonial-box, .slider-box.testimonial-box {
+		.slick-next, .slick-prev {
+			width: 63px;
+		}
+	}
+}
+@media screen and (max-width: 1800px) {
+	.slider-box.testimonial-box, .slider-box.testimonial-box {
+		.slick-next, .slick-prev {
+			width: 64px;
+		}
+	}
+}
+@media screen and (max-width: 1700px) {
+	.navbar ul li .wst-mega-menu {
+		left: auto;
+		right: 0;
+	}
+}
+@media screen and (max-width: 1680px) {
+	.slider-box.testimonial-box, .slider-box.testimonial-box {
+		.slick-next, .slick-prev {
+			width: 65px;
+		}
+	}
+}
+@media screen and (max-width: 1600px) {
+	.slider-box.testimonial-box, .slider-box.testimonial-box {
+		.slick-next, .slick-prev {
+			width: 66px;
+		}
+	}
+	.navbar ul li ul {
+		left: auto;
+		right: 0;
+	}
+	.navbar ul li ul li ul {
+		left: auto;
+		right: 101%;
+	}
+}
+@media screen and (max-width: 1440px) {
+	.slider-box.testimonial-box, .slider-box.testimonial-box {
+		.slick-next, .slick-prev {
+			width: 67px;
+		}
+	}
+}
+@media screen and (max-width: 1400px) {
+	.slider-box.testimonial-box, .slider-box.testimonial-box {
+		.slick-next, .slick-prev {
+			width: 68px;
+		}
+	}
+}
+@media screen and (max-width: 1280px) {
+	.slider-box.testimonial-box, .slider-box.testimonial-box {
+		.slick-next, .slick-prev {
+			width: 69px;
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	.speaker {
+		overflow: visible;
+		.speaker-info {
+			position: relative;
+			background: none;
+			@include transform(none);
+			.speaker-description {
+				position: relative;
+				padding: 20px 10px;
+				top: auto;
+				font-size: 16px;
+				color: $grey;
+				padding-top: 0;
+				@include transform(none);
+			}
+			.social-links {
+				position: relative;
+				bottom: auto;
+				a {
+					font-size: 18px;
+					margin: 0 2px;
+				}
+			}
+			.speaker-detail {
+				h1, h2, h3, h4, h5, h6, p, span {
+					color: $black;
+				}
+			}
+		}
+		&:hover {
+			.speaker-info {
+				background: none;
+				@include transform(none);
+			}
+			.speaker-detail {
+				padding: 20px 30px;
+			}
+		}
+		.social-links {
+			a {
+				color: $black;
+			}
+		}
+	}
+	.pricing-plan {
+		.price-head {
+			.price-value {
+				.value {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+	.latest-posts-slider {
+		article {
+			.post-body {
+				padding: 20px 15px;
+			}
+			&:hover {
+				.post-link {
+					display: none;
+				}
+			}
+		}
+	}
+	.c-7.offset-5 {
+		width: 100%;
+		margin: 0;
+	}
+	.slider-box.testimonial-box {
+		.slick-prev, .slick-next {
+			display: none !important;
+		}
+	}
+	section.left-wrapper:before, section.right-wrapper:before {
+		display: none;
+	}
+}
+@media screen and (max-width: 1140px) {
+	.mobile-nav {
+		display: table-cell;
+	}
+	.is-sticky .navbar {
+		padding: 10px 0;
+	}
+	.navbar {
+		.menu {
+			display: none;
+			position: fixed;
+			left: 0;
+			width: 100%;
+			padding: 0 50px;
+			margin: 0;
+			top: auto;
+			overflow: auto;
+			height: auto;
+			max-height: 100%;
+			bottom: 0;
+			background: $light;
+			li {
+				display: block;
+				padding: 3px 0;
+				text-align: left;
+				border-bottom: 1px solid $theme-light-background;
+				a {
+					display: inline-block;
+					width: 96%;
+				}
+				i, .fa {
+					width: 26px;
+					height: 26px;
+					text-align: center;
+					line-height: 24px;
+					border: 1px solid $theme-light-background;
+				}
+				ul {
+					position: relative;
+					visibility: visible;
+					top: auto;
+					height: auto;
+					@include box-shadow(none);
+					@include opacity(1);
+					@include transform(none);
+					li {
+						ul {
+							left: auto;
+							right: auto;
+							margin-left: 30px;
+						}
+					}
+				}
+				&:last-child {
+					border-bottom: none;
+				}
+				.wst-mega-menu {
+					position: relative;
+					visibility: visible;
+					top: 0;
+					padding: 0;
+					@include opacity(1);
+					@include box-shadow(none);
+					@include transform(none);
+					ul {
+						visibility: visible;
+						display: block;
+						border: none;
+					}
+				}
+			}
+		}
+	}
+	.parallax, .with-video {
+		.menu {
+			> li {
+				> a {
+					color: $black;
+				}
+			}
+		}
+	}
+	header.background-slider {
+		height: auto !important;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.scroll-to-top {
+		display: none;
+	}
+}
+@media screen and (max-height: 800px) {
+	header.fullscreen, header.with-video {
+		height: auto !important;
+	}
+}
+@media screen and (max-width: 991px) {
+	.pricing-plan {
+		margin: 30px 0;
+		.price-body {
+			.short-description {
+				display: block;
+				br {
+					display: none;
+				}
+			}
+		}
+	}
+	.tabs-content {
+		[class*="c-"] {
+			width: 100%;
+			float: none;
+			text-align: center;
+		}
+		.post-media {
+			img {
+				width: 100%;
+			}
+		}
+		.post-meta {
+			display: block;
+		}
+		.post-title {
+			margin-top: 40px;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.sponsor {
+		margin: 50px 0;
+	}
+	.navbar .menu {
+		padding: 0 15px;
+	}
+	.speakers > div {
+		margin-bottom: 60px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.speaker {
+		text-align: center;
+		img {
+			display: inline-block;
+		}
+	}
+	.features i {
+		margin-top: 40px;
+	}
+	.google-map .custom-infowindow {
+		visibility: hidden;
+		@include opacity(0);
+	}
+	.wall-of-fame {
+		margin-bottom: 50px;
+		text-align: center;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.box {
+		.box-controls {
+			position: relative;
+			bottom: auto;
+			width: auto;
+			height: auto;
+			right: auto;
+			margin-top: 10px;
+		}
+	}
+	.latest-posts-slider {
+		article {
+			.post-body {
+				padding: 40px 15px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	.tabs {
+		li {
+			display: block;
+			width: auto;
+		}
+	}
+	td {
+		display: block;
+	}
+	.double-btn {
+		p, span {
+			display: none;
+		}
+	}
+}
+@media screen and (max-width: 548px) {
+	.tabs-content .fundraising {
+		margin-bottom: 50px;
+	}
+	.status {
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-top: 20px;
+		width: 50%;
+		display: inline-block;
+	}
+}
+@media screen and (max-width: 500px) {
+	.tabs-content {
+		.timeline {
+			padding: 15px;
+			margin-top: 0;
+			height: auto;
+			li {
+				display: block;
+				width: auto;
+				padding: 10px 0;
+				span {
+					a {
+						top: auto;
+					}
+					&:after, &:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	footer .social-links {
+		a {
+			display: block;
+			margin: auto;
+			&:first-child {
+				margin: auto;
+			}
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	.status {
+		width: auto;
+	}
+}

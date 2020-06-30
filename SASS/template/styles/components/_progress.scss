@@ -1,0 +1,100 @@
+.progress {
+	margin-bottom: 15px;
+	text-align: left;
+	h1,h2, h3, h4, h5, h6, p, span, a {
+		margin-bottom: 10px;
+	}
+	.skill {
+		width: 100%;
+		height: 10px;
+		background: $theme-light-background;
+		padding: 3px;
+		@include radius(5px);
+		.skill-bar {
+			height: 100%;
+			position: relative;
+			background: $theme-color;
+			@include radius(5px);
+			@include transition(all 250ms);
+			.skill-info {
+				background: $theme-color;
+				color: $light;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				padding: 6px;
+				font-size: 14px;
+				font-weight: 700;
+				@include radius(5px);
+				@include transform(translateY(-50%));
+			}
+		}
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&.dark {
+		.skill {
+			.skill-bar, .skill-info {
+				background: $theme-dark-color;
+			}
+		}
+	}
+}
+
+.fundraising {
+	position: relative;
+	z-index: 2;
+	.skill {
+		height: 20px;
+		padding: 0;
+		position: relative;
+		@include radius(0);
+		.goal-info {
+			background: $theme-second-color;
+			color: $light;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			font-size: 16px;
+			padding: 15px;
+			font-weight: 700;
+			@include radius(0);
+			@include transform(translateY(-50%));
+		}
+		.skill-bar {
+			@include radius(0);
+			.skill-info {
+				font-size: 16px;
+				padding: 15px;
+				@include radius(0);
+				&:after {
+					display: block;
+					content: attr(data-description);
+					position: absolute;
+					top: -40px;
+					left: 50%;
+					text-align: center;
+					white-space: nowrap;
+					@include transform(translateX(-50%));
+				}
+			}
+		}
+	}
+}
+.tabs-content .fundraising {
+	margin-top: 60px;
+	.skill {
+		height: 5px;
+		background: #ddd;
+		.goal-info, .skill-bar .skill-info {
+			font-size: 14px;
+			padding: 6px;
+		}
+		.skill-bar .skill-info:after {
+			font-size: 12px;
+			top: -25px;
+			color: $black;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.notification {
+	color: $light;
+	font-size: $button-size;
+	padding: 25px;
+	display: block;
+	@include radius(5px);
+	&.success {
+		background: #80d049;
+	}
+	&.error {
+		background: #f24b4b;
+	}
+	&.warning {
+		background: #f48d48;
+	}
+	&.info {
+		background: #0084dd;
+	}
+
+	i, .fa {
+		font-size: 18px;
+		margin: 0 30px;
+	}
+}

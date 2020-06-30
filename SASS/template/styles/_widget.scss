@@ -1,0 +1,117 @@
+.widget {
+	margin-bottom: 50px;
+	&.solid {
+		padding: 20px;
+		background: $theme-light-background;
+		@include radius(5px);
+	}
+	.widget-title {
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+		border-bottom: 2px solid $theme-light-background;
+	}
+	.pricing-plan {
+		cursor: auto;
+		.price-head {
+			.price-value {
+				float: none;
+				display: block;
+				text-align: center;
+			}
+		}
+		.price-body, .price-body a {
+			margin-top: 25px;
+		}
+		&:hover {
+			background: $theme-light-background;
+			.price-value * {
+				color: $black;
+			}
+			.link {
+				color: $theme-color;
+			}
+		}
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.organizer {
+		.organizer-media {
+			display: inline-block;
+			float: left;
+			img {
+				@include radius(5px);
+			}
+		}
+		.organizer-description {
+			clear: both;
+			padding-top: 15px;
+			p, span {
+				font-size: 16px;
+				margin: 0;
+				color: $black;
+			}
+		}
+		.organizer-info {
+			display: inline-block;
+			float: left;
+			margin-left: 30px;
+			.organizer-name {
+				font-weight: 700;
+				margin-bottom: 15px;
+			}
+			.organizer-social-links {
+				a {
+					color: $black;
+					margin: 0 8px;
+					font-size: 18px;
+					&:hover {
+						color: $theme-color;
+					}
+					&:first-child {
+						margin-left: 0;
+					}
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+	.widget-tags {
+		li {
+			display: inline-block;
+			a {
+				border: 2px solid $theme-light-background;
+				color: $theme-grey-color;
+				font-size: $button-size;
+				text-transform: uppercase;
+				padding: 7px 16px;
+				margin: 0px 2px 8px 2px;
+				display: block;
+				font-weight: 700;
+				@include radius(5px);
+				&:hover, &:focus, &:active {
+					border-color: $theme-color;
+					color: $theme-grey-color;
+				}
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+.section-solid {
+	.pricing-plan {
+		background: $theme-dark-color;
+		.price-body {
+			.short-description {
+				display: block;
+			}
+		}
+	}
+}
+.wall-of-fame {
+	margin-bottom: 50px;
+}

@@ -1,0 +1,30 @@
+.pagination {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	li {
+		display: inline-block;
+		a, span {
+			display: block;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			line-height: 46px;
+			color: $grey;
+			border: 2px solid $theme-light-background;
+			@include radius(5px);
+		}
+		a {
+			&:hover, &.active {
+				border-color: #ddd;
+				color: $black;
+			}
+			&.fa {
+				font-size: 20px;
+			}
+		}
+		span {
+			@include opacity(0.7)
+		}
+	}
+}

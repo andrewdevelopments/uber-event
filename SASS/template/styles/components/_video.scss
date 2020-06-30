@@ -1,0 +1,47 @@
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	&.video-on {
+		visibility: visible;
+	}
+	&.stopped {
+		visibility: hidden;
+	}
+}
+.player-controls {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: auto;
+	cursor: pointer;
+	visibility: hidden;
+	@include opacity(0);
+	@include transform(translate(-50%, 100%));
+	@include transition(all 250ms);
+	> div {
+		@include transition(all 250ms);
+		background: $light;
+		display: inline-block;
+		width: 80px;
+		height: 60px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 62px;
+		margin: 0 5px;
+		&:hover {
+			background: $theme-color;
+			color: $light;
+		}
+	}
+	&.hide {
+		
+	}
+	&.video-on {
+		visibility: visible;
+		@include opacity(1);
+		@include transform(translate(-50%, 0));
+	}
+}

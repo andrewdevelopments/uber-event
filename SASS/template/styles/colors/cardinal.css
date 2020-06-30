@@ -1,0 +1,133 @@
+/**
+
+* Main Color: #d93919;
+* Second Color: #000;
+
+**/
+
+.tabs-content .post-meta a:hover, .tabs-content .post-meta a:focus {
+  color: #d93919;
+}
+.tabs-content .timeline li.active span a {
+  background: #d93919;
+}
+.tabs-content .timeline li.active span:after {
+  background: #d93919;
+}
+.tabs-content .widget .widget-tags li a:hover, .tabs-content .widget .widget-tags li a:focus {
+  color: #d93919;
+}
+a {
+  color: #d93919;
+}
+.btn {
+  background: #d93919;
+}
+.btn.alt.color {
+  color: #d93919;
+  border: 2px solid #d93919;
+}
+.btn.alt:hover, .btn.alt:focus, .btn.alt:active {
+  background: #d93919;
+  border-color: #d93919;
+}
+.double-btn a:hover, .double-btn a:focus, .double-btn a:active {
+  background: #d93919;
+}
+.post-share a:hover {
+  color: #d93919;
+}
+.progress .skill .skill-bar {
+  background: #d93919;
+}
+.progress .skill .skill-bar .skill-info {
+  background: #d93919;
+}
+.player-controls > div:hover {
+  background: #d93919;
+}
+.box .box-controls > div:hover {
+  background: #d93919;
+}
+.features i {
+  color: #d93919;
+}
+.latest-posts-slider article .post-media .post-link a:hover {
+  background: #d93919;
+}
+.latest-posts-slider article .post-body .post-title h1:hover, .latest-posts-slider article .post-body .post-title h2:hover, .latest-posts-slider article .post-body .post-title h3:hover, .latest-posts-slider article .post-body .post-title h4:hover, .latest-posts-slider article .post-body .post-title h5:hover, .latest-posts-slider article .post-body .post-title h6:hover {
+  color: #d93919;
+}
+footer p i, footer span i {
+  color: #d93919;
+}
+.widget .pricing-plan:hover .link {
+  color: #d93919;
+}
+.widget .organizer .organizer-info .organizer-social-links a:hover {
+  color: #d93919;
+}
+.widget .widget-tags li a:hover, .widget .widget-tags li a:focus, .widget .widget-tags li a:active {
+  border-color: #d93919;
+}
+.navbar ul li a.active {
+  color: #d93919;
+}
+.navbar ul li .wst-mega-menu ul i.colored, .navbar ul li .wst-mega-menu ul .fa.colored {
+  color: #d93919;
+}
+.navbar ul li:hover > a {
+  color: #d93919;
+}
+.navbar.solid ul li a:hover, .navbar.solid ul li a:focus {
+  color: #d93919;
+}
+.navbar.solid.dark ul li a:hover, .navbar.solid.dark ul li a:focus {
+  color: #d93919;
+}
+.is-sticky .navbar .menu > li .active {
+  color: #d93919;
+}
+
+form input[type="submit"] {
+  background: #d93919;
+}
+.wst-list li a:hover, .wst-list li a:focus {
+  color: #d93919;
+  border-color: #d93919;
+}
+.wst-list.solid li a {
+  color: #d93919;
+}
+.wst-list.solid li a:hover, .wst-list.solid li a:focus {
+  background: #d93919;
+}
+.title p strong, .title span strong {
+  color: #d93919;
+}
+.status {
+  background: #d93919;
+}
+.section-solid.colored {
+  background: #d93919;
+}
+strong.colored {
+  color: #d93919;
+}
+
+/* Second Color */
+a:hover, a:focus, a:active {
+  color: #000;
+}
+.btn:hover, .btn:focus, .btn:active {
+  background: #000;
+}
+.double-btn .darker {
+  background: #000;
+}
+.fundraising .skill .goal-info {
+  background: #000;
+}
+header .header-content .header-text .info, header .header-content .vertical-align-middle .info, header .vertical-align .header-text .info, header .vertical-align .vertical-align-middle .info {
+  background: #000;
+}

@@ -1,0 +1,53 @@
+.loader {
+	background: $light;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	.loader-animation {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top: 50%;
+		left: 50%;
+		@include transform(translateY(-50%, -50%));
+		&:before, &:after {
+			content: "";
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			border: 2px solid $grey;
+			@include radius(100%);
+			@include opacity(0);
+			@include animation('pulsar 1s ease-out infinite');
+		}
+		&:before {
+			animation-delay: .3s;
+			-webkit-animation-delay: .3s;
+		}
+	}
+	&.dark {
+		background: $black;
+		.loader-animation {
+			&:before, &:after {
+				border: 2px solid $light;
+			}
+		}
+	}
+}
+
+@include keyframes(pulsar) {
+	0% {
+		@include transform(scale(0.1));
+		@include opacity(0);
+	}
+	50% {
+		@include opacity(1);
+	}
+	100% {
+		@include transform(scale(1.2));
+		@include opacity(0);
+	}
+}

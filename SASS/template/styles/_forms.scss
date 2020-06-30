@@ -1,0 +1,197 @@
+form {
+	padding: 20px;
+	@include radius(5px);
+	&.solid {
+		background: $theme-light-background;
+		input, select, textarea {
+			background: $light;
+		}
+	}
+	button.btn {
+		position: relative;
+		.checking-form {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			line-height: 60px;
+			overflow: hidden;
+			z-index: 1;
+			color: $light;
+			@include radius(5px);
+			@include transition(all 250ms);
+			&:after {
+				display: block;
+				content: '';
+				background: $alert-success;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				@include transition(all 950ms);
+				@include transform(translateX(-100%));
+			}
+			&.success-form:after {
+				@include transform(translateX(0));
+			}
+		}
+	}
+	fieldset {
+		border: none;
+		padding: 0;
+		margin: 0 0 30px;
+		input {
+			margin: 0;
+		}
+		> div {
+			position: relative;
+			i, .fa {
+				color: $theme-grey-color;
+				position: absolute;
+				top: 50%;
+				right: 2%;
+				font-size: 20px;
+				@include transform(translateY(-50%));
+			}
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&.checkbox {
+			label {
+				display: inline-block;
+				margin: 0 10px;
+			}
+		}
+	}
+	label {
+		color: $black;
+		font-weight: 700;
+		display: block;
+		margin-bottom: 10px;
+		small {
+			margin: 0;
+		}
+	}
+	input, select, button {
+		height: 60px;
+	}
+	input[type="radio"], input[type="checkbox"] {
+		height: auto;
+		width: auto;
+		margin: 10px 0;
+		display: inline-block;
+	}
+	input, select, button, textarea {
+		color: $black;
+		padding: 10px 30px;
+		margin-bottom: 15px;
+		width: 100%;
+		display: block;
+		border: none;
+		font-weight: 700;
+		background: $theme-light-background;
+		@include radius(5px);
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	input[type="submit"] {
+		background: $theme-color;
+	}
+	input, textarea {
+		color: $black;
+	}
+	textarea {
+		height: 110px;
+	}
+	.event-submission {
+		textarea {
+			height: 160px;
+		}
+	}
+	select {
+		color: $theme-grey-color;
+		cursor: pointer;
+	}
+	small, .description {
+		color: $theme-grey-color;
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.error {
+		border: 2px solid $alert-error;
+	}
+	&.login {
+		label {
+			display: inline-block;
+		}
+	}
+	input, select, textarea {
+		&:focus {
+			background: #eee;
+		}
+	}
+	&.module {
+		padding: 0;
+		fieldset {
+			> div {
+				i, .fa {
+					right: 10%;
+				}
+			}
+		}
+	}
+}
+
+::-webkit-input-placeholder {
+   color: $theme-grey-color;
+}
+:-moz-placeholder {
+   color: $theme-grey-color;  
+}
+::-moz-placeholder {
+   color: $theme-grey-color;  
+}
+:-ms-input-placeholder {  
+   color: $theme-grey-color;  
+}
+input:-webkit-autofill {
+    color: #fff !important;
+}
+.select {
+	position: relative;
+	&:after {
+		position: absolute;
+		display: block;
+		content: '\f0c9';
+		font-family: fontAwesome;
+		width: 50px;
+		top: 50%;
+		height: 50px;
+		right: 7px;
+		font-size: 21px;
+		text-align: center;
+		line-height: 52px;
+		background-color: $light;
+		color: $theme-grey-color;
+		@include radius(5px);
+		@include transform(translateY(-50%));
+	}
+}
+.layout-switcher {
+	a, i {
+		margin: 20px 10px 0;
+		font-size: 23px;
+		color: $theme-grey-color;
+	}
+}
+.header-search {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 2;	
+}

@@ -1,0 +1,45 @@
+body {
+	font-family: $paragraphs-font;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headings-font;
+	color: $black;
+	font-weight: 300;
+	&.light {
+		color: $light;
+	}
+}
+p {
+	font-family: $paragraphs-font;
+	color: $grey;
+	line-height: $line-height;
+	font-size: $text-size;
+	&.light {
+		color: $light;
+	}
+	&.dark {
+		color: $black;
+	}
+}
+span {
+	font-family: $buttons-font;
+	font-size: $text-size;
+	display: inline-block;
+}
+input, textarea, select, label, small {
+	font-family: $buttons-font;
+	font-weight: 700;
+}
+blockquote {
+	padding: 20px 40px;
+	margin: 0 0 15px;
+	border-left: 4px solid #e1e1e1;
+	background: #f8f8f8;
+	font-size: 20px;
+}
+h1 {font-size: $h1;}
+h2 {font-size: $h2;}
+h3 {font-size: $h3;}
+h4 {font-size: $h4;}
+h5 {font-size: $h5;}
+h6 {font-size: $h6;}

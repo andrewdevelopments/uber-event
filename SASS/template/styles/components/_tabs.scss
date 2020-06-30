@@ -1,0 +1,215 @@
+.tabs {
+	background: $theme-dark-color;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	li {
+		display: table-cell;
+		width: 1%;
+		text-align: center;
+		a {
+			color: $theme-grey-color;
+			padding: 20px 0;
+			display: block;
+			text-transform: uppercase;
+			strong, span {
+				font-size: 16px;
+				display: block;
+				margin-bottom: 5px;
+			}
+			&.active {
+				color: $light;
+			}
+		}
+	}
+}
+.tabs-content {
+	background: $theme-light-background;
+	padding: 50px;
+	display: inline-block;
+	width: 100%;
+	> div {
+		display: none;
+		visibility: hidden;
+	}
+	.active {
+		display: block;
+		visibility: visible;
+	}
+	.post-title {
+		margin-bottom: 15px;
+	}
+	.post-date {
+		color: $theme-grey-color;
+		font-size: 16px;
+		margin-bottom: 10px;
+		strong {
+			color: $black;
+		}
+	}
+	.post-excerpt {
+		margin: 30px 0;
+		> * {
+			color: $black;
+			margin: 0;
+		}
+		a {
+			font-size: 14px;
+			text-transform: lowercase;
+		}
+	}
+	.post-media {
+		position: relative;
+		&.with-links {
+			&:after {
+				background: $theme-dark-color;
+				position: absolute;
+				display: block;
+				content: '';
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				visibility: hidden;
+				z-index: 0;
+				@include radius(5px);
+				@include opacity(0);
+				@include transition(all 250ms);
+				@include transform(scale(1.1));
+			}
+			&:hover:after {
+				visibility: visible;
+				@include opacity(0.6);
+				@include transform(scale(1));
+			}
+		}
+	}
+	.speaker-name {
+		padding: 20px 0 10px;
+	}
+	.post-meta {
+		color: $theme-grey-color;
+		font-size: 16px;
+		font-weight: 700;
+		a {
+			color: $black;
+			text-transform: none;
+			&:hover, &:focus {
+				color: $theme-color;
+			}
+		}
+	}
+	.timeline {
+		padding: 0;
+		height: 2px;
+		width: 100%;
+		margin-bottom: 50px;
+		background: #ddd;
+		li {
+			display: table-cell;
+			width: 1%;
+			text-align: center;
+			position: relative;
+			span {
+				position: relative;
+				cursor: pointer;
+				&:before, &:after {
+					background: $theme-light-background;
+					position: absolute;
+					content: '';
+					top: 0;
+					left: 50%;
+					width: 18px;
+					height: 18px;
+					border: 2px solid #ddd;
+					@include radius(100%);
+					@include transition(all 250ms);
+					@include transform(translate(-50%, -50%));
+				}
+				&:after {
+					@include transform(translate(-50%, -50%) scale(0.1));
+				}
+				a {
+					color: $black;
+					text-transform: uppercase;
+					position: relative;
+					top: -40px;
+					font-size: 14px;
+					font-weight: 700;
+					padding: 4px 15px;
+					&:active {
+						color: inherit;
+					}
+				}
+			}
+			&.active {
+				span {
+					a {
+						background: $theme-color;
+						color: $light;
+						padding: 4px 15px;
+						@include radius(5px);
+					}
+					&:after {
+						background: $theme-color;
+						border: none;
+						@include transform(translate(-50%, -50%) scale(1));
+					}
+				}
+				&.no-target {
+					span {
+						a, &:after {
+							background: $alert-success;
+						}
+					}
+				}
+			}
+		}
+	}
+	.lvl2-tabs {
+		visibility: hidden;
+		display: none;
+		&.active {
+			visibility: visible;
+			display: block;
+		}
+	}
+	.map {
+		height: 350px;
+		visibility: visible;
+	}
+	.custom-infowindow {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			margin-bottom: 15px;
+		}
+		p {
+			font-size: 16px;
+			margin: 0;
+		}
+	}
+	.widget {
+		margin-top: 20px;
+		.widget-tags {
+			li {
+				a {
+					background: $light;
+					text-transform: none;
+					border: none;
+					&:hover, &:focus {
+						color: $theme-color;
+					}
+					i, .fa {
+						font-size: 18px;
+						margin: 0 10px 0 0;
+					}
+				}
+			}
+		}
+	}
+}
